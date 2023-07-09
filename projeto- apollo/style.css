@@ -1,0 +1,167 @@
+@charset "UTF-8";
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+  }
+  
+  *, *::before, *::after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    background: url('https://cutewallpaper.org/28/desktop-wallpaper-space-man/1721714926.jpg') top center no-repeat;
+    background-size: cover;
+    color: white;
+    background-position: bottom;
+  }
+  
+  main {
+    max-width: 960px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 2rem;
+    padding: 50px;
+    font-family: 'Heebo', sans-serif;
+    margin: 0 auto;
+    padding: 0 20px;
+    height: 100vh;
+  }
+  
+  .header {
+    width: 100%;
+  }
+  
+  .top-navigation {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .top-navigation ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  .top-navigation ul li {
+    display: inline-block;
+    padding: 0 20px;
+  }
+  
+  a {
+    color: aqua;
+    text-decoration: none;
+  }
+  
+  .logo {
+    width: 64px;
+    height: 64px;
+    background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/1200px-NASA_logo.svg.png') top center no-repeat;
+    background-size: cover;
+    margin-inline-end: auto;
+  }
+  
+  .main-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .main-text h1 {
+   font-size: 20rem;
+   position: relative;
+   display: inline-block;
+  }
+  
+  .main-text h1::before {
+    font-size: 1.6rem;
+    font-weight: 300;
+    display: block;
+    content: 'Science is a beautiful gift to humanity.';
+    position: absolute;
+    top: 30px;
+    right: 10px;
+  }
+  
+  
+  .explore-link, .watch-link, .search-link {
+    display: flex;
+    align-items: center;
+    color: cyan;
+  }
+  
+  .explore-link span {
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 10px;
+    font-size: 1.6em;
+    background-image: linear-gradient(45deg, black,black);
+  }
+  
+  .watch-link svg {
+    margin-right: 10px; 
+  }
+  
+  svg {
+    width: 24px;
+    height: 16px;
+    background-image: linear-gradient(45deg, black,black);
+  }
+  
+  @media screen and (max-width: 768px) {
+    html {
+      font-size: 50%;
+    }
+    
+    main {
+      padding: 20px;
+    }
+    
+    
+   .top-navigation {
+      flex-direction: column;
+    }
+    
+    .top-navigation ul {
+      max-width: 100%;
+      flex-wrap: nowrap;
+      overflow:hidden;
+      margin-left: 5px;
+      background-image: linear-gradient(to top,blue,transparent);
+    }
+    
+    .top-navigation ul li {
+      flex: 0 0 auto;
+      padding: 0 15px;
+    }
+    
+    .logo {
+      margin-bottom: 20px
+    }
+    
+    .main-text {
+      margin: 50px auto;
+    }
+    
+    .main-text h1 {
+      font-size: 5rem;
+      margin-bottom: 10px;
+      color: magenta;
+    }
+    
+    .main-text h1::before {
+      font-size: 1.4rem;
+      top: 110px;
+    }
+    
+    svg {
+      width: 16px;
+      height: 30px;
+      margin-top: 10px;
+    }
+  }
