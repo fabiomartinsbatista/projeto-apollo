@@ -93,6 +93,7 @@ html {
     display: flex;
     align-items: center;
     color: cyan;
+    margin-bottom: 70px;
   }
   
   .explore-link span {
